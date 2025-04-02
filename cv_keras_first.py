@@ -1,4 +1,5 @@
 ## Visualize training history
+## This is a simple neural network construction file...!!
 from keras.models import Sequential
 from keras.layers import Dense
 import matplotlib.pyplot as plt
@@ -11,8 +12,8 @@ dataset = numpy.loadtxt("pima-indians-diabetes.data.csv", delimiter=",")
 ## split into input (X) and output (Y) variables
 X = dataset[:,0:8]
 Y = dataset[:,8]
-#print(X)
-#print(Y)
+print(X)
+print(Y)
 ## create model
 # 선형적으로 차원을 쌓아 모델을 만듦
 model = Sequential()
